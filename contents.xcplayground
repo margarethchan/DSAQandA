@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='1. Arrays - Diagonal Sum'/>
+        <page name='2. Arrays - Find Repeats'/>
+        <page name='3. Arrays - First Five Sum'/>
+        <page name='4. Arrays - Greatest Row or Column'/>
+        <page name='5. Arrays - Largest Product of Two'/>
+        <page name='6. Arrays -  Matrix Sum'/>
+        <page name='7. Arrays - Pair Sum'/>
+        <page name='8. Arrays - Product Of All Except Index'/>
+        <page name='9. Arrays - Remove Duplicates'/>
+        <page name='10. Arrays - Second Largest'/>
+        <page name='11. Arrays - Merge Sorted Arrays'/>
+        <page name='12. Arrays - Shift Zeros'/>
+        <page name='13. Arrays - Product of Three'/>
+        <page name='14. Arrays - Keypad'/>
+        <page name='15. Arrays - Increment'/>
+        <page name='01. Integers - Avoid Fives'/>
+        <page name='02. Integers - Add Digits'/>
+        <page name='03. Integers - Backwards Primes'/>
+        <page name='04. Integers - Happy Numbers'/>
+        <page name='05. Integers - Frequency Dict'/>
+        <page name='01. Linked Lists - Swap Nodes'/>
+        <page name='01. Stacks - Largest Element in Stack'/>
+        <page name='02. Stacks - Valid Parentheses'/>
+        <page name='03. Stacks - Linked List'/>
+        <page name='01. Strings - Palindrome'/>
+        <page name='02. Strings - Pangram'/>
+        <page name='03. Strings - Remove Vowels'/>
+        <page name='04. Strings - Reverse String'/>
+        <page name='05. Strings - Pattern Match'/>
+        <page name='06. Strings - Character Index'/>
+        <page name='07. Strings - Palindrome Anagrams'/>
+        <page name='08. Strings - Common Words'/>
+        <page name='01. Recursion - Factorial'/>
+        <page name='02. Recursion - Fibonacci'/>
+        <page name='03. Recursion - Fewest Coins'/>
+        <page name='01. HOF - map()'/>
+        <page name='02. HOF - compactMap()'/>
+        <page name='03. HOF - filter()'/>
+        <page name='04. HOF - sorted()'/>
+        <page name='05. HOF - reduce()'/>
+        <page name='01. Dictionary - grouping'/>
+        <page name='02. Dictionary - mapValues()'/>
+        <page name='01. Queues - Linked List'/>
+        <page name='02. Queues - Array'/>
+        <page name='03. Queues - Linked List 2'/>
+        <page name='01. Sets Study'/>
+        <page name='02. Sets - Intersection of Two Arrays'/>
+        <page name='03. Sets - Remove Duplicates from Sorted Array'/>
+        <page name='01. Hash Tables - C4Q'/>
+        <page name='02. Hash Tables - Ray Wenderlich'/>
+        <page name='03. Hash Tables - C4Q'/>
+        <page name='01. Quick Sort'/>
+        <page name='01. Merge Sort'/>
+        <page name='01. Trees Info'/>
+        <page name='02. Trees in Action'/>
+    </pages>
+</playground>
