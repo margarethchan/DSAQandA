@@ -1,7 +1,10 @@
 //: [Previous](@previous)
 import Foundation
-//: # Strings
-//: > Given a block of text find the 5 most common words.
+/*:
+ # Strings
+[[C4Q]](https://github.com/C4Q/AC-iOS/tree/master/lessons/dsa/HashTables)
+> Given a block of text find the 5 most common words. [[Sample Text]](https://www.usconstitution.net/const.txt)
+ */
 let blockOfText = """
 We the People of the United States, in Order to form a more perfect Union,
 establish Justice, insure domestic Tranquility, provide for the common
@@ -870,17 +873,26 @@ Representatives, shall take effect, until an election of Representatives shall
 have intervened.
 """
 
+//: MY SOLUTION
 func findCommonWords(in text: String) -> [String] {
     var wordDict = [String: Int]()
-    let textWithoutNewLines = text.replacingOccurrences(of: "\n;:,.", with: " ")
+    var commonWords = [String]()
+    let textWithoutNewLines = text.replacingOccurrences(of: "\n", with: " ")
     let lowercasedText = textWithoutNewLines.lowercased()
-    print(lowercasedText)
-    for word in lowercasedText.components(separatedBy: " ") {
+    let textWithoutPunc = lowercasedText.components(separatedBy: .punctuationCharacters).joined()
+    print(textWithoutPunc)
+    for word in textWithoutPunc.components(separatedBy: " ") {
         if wordDict[word] == nil {
-            
+            wordDict[word] = 1
+        } else {
+            wordDict[word] = wordDict[word, default: 0] + 1
         }
     }
-    return Array(wordDict.keys)
+    let sortedArrayOfTuples = Array(wordDict.sorted{$0.value > $1.value}.prefix(5))
+    sortedArrayOfTuples.forEach { (entry) in
+        commonWords.append(entry.key)
+    }
+    return commonWords
 }
 findCommonWords(in: blockOfText)
 //: [Next](@next)

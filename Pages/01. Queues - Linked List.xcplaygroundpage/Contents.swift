@@ -32,7 +32,7 @@ class LLNode<Key> { // 1
 struct Queue<T> { // 2
     private var head: LLNode<T>?
     private var tail: LLNode<T>?
-    var isEmpty: Bool { // 4
+    var isEmpty: Bool {
         return head == nil
     }
     mutating func enQueue(_ newElement: T) { // 3
@@ -66,13 +66,30 @@ myQueue.enQueue("Hello")
 myQueue.enQueue("My")
 myQueue.enQueue("Name")
 myQueue.enQueue("Is")
-myQueue.enQueue("Maggie")
+myQueue.enQueue("Maggie") // Runtime: O(1) - Constant (Insertion)
 
 func printElements(in queue: Queue<String>) {
     var q = queue
-    while !q.isEmpty {
-       print(q.deQueue()!)
+    while !q.isEmpty { // Runtime: O(n) - Linear (Access)
+        print(q.deQueue()!) // Runtime: O(1) - Constant (Deletion)
     }
 }
 printElements(in: myQueue)
+// Runtime: O(n) - Linear (Access)
+//: > Print the third element in a Queue.
+func printFourth<T: Equatable>(in queue: Queue<T>) -> T {
+    var queue = queue
+    var count = 0
+    var currentElement = queue.peek()
+    while !queue.isEmpty && count < 4 { // Runtime: O(n) - Linear (Access)
+        currentElement = queue.deQueue() // Runtime: O(1) - Constant (Deletion)
+        count += 1
+    }
+    print(currentElement!)
+    return currentElement!
+}
+
+printFourth(in: myQueue)
+// Runtime: O(n) - Linear (Search)
+
 //: [Next](@next)

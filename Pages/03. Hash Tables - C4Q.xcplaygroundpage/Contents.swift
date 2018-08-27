@@ -123,7 +123,7 @@ print(myDict.toArr())
  O(n) - linear
  O(1) - constant
  
- Search  Insert  Delete  Access
+                Search  Insert  Delete  Access
  Array           O(n)    O(n)    O(n)    O(1)
  Linked List     O(n)    O(1)    O(1)    O(n)
  Hashmap         O(1)    O(1)    O(1)

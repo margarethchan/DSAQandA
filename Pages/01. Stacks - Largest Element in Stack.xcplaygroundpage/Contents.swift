@@ -24,7 +24,6 @@ import Foundation
 
 //: SOLUTION: Generic Stack
 //: [[C4Q]](https://github.com/C4Q/AC-DSA/blob/master/StackSolutions/Largest%20Element%20Solution.md)
-
 struct Stack<T> {
     private var arr: [T] = []
     mutating func push(_ newElement: T) {
@@ -63,4 +62,19 @@ stackInt.push(-9)
 stackInt.push(3)
 
 largestElement(in: stackInt)
+
+//: > Find the third element in a stack.
+func thirdValue<T: Equatable>(in stack: Stack<T>) -> T? {
+    guard !stack.isEmpty else { return nil }
+    var stack = stack
+    var count = 0
+    var currentElement = stack.peek()
+    while !stack.isEmpty && count < 3 {
+        currentElement = stack.pop()
+        count += 1
+    }
+    return currentElement
+}
+
+thirdValue(in: stackInt)
 //: [Next](@next)

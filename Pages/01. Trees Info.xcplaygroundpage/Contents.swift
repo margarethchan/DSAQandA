@@ -60,8 +60,8 @@ import Foundation
  - - -
  ### Binary Search Tree
  A Binary Search Tree is Binary Tree with two conditions:
- * Every node in the left child's subtree its parent.
- * Every node in the right child's subtree its parent.
+ * Every node in the left child's subtree is less than or equal to its parent.
+ * Every node in the right child's subtree is greater than or equal to its parent.
  * (Generally BSTs are defined to have unique values).\
  Typically, when people talk about trees they are talking about Binary Search Trees.\
   ![Binary Search Tree](binarysearchtree.png)

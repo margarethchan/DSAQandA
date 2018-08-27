@@ -33,6 +33,9 @@ For a Breadth First Search, we want to look at:
  * All the nodes on level 0
  * Then all the nodes on level 1
  * Then all the nodes on level 2
+ \
+  ![Breadth First Search](bfs1-1.gif)\
+ [[Image from Ray Wenderlich]](https://www.raywenderlich.com/661-swift-algorithm-club-swift-depth-first-search)
 */
 // First we need a Queue
 class LLNode<Key> {
@@ -74,7 +77,7 @@ struct Queue<T> {
 }
 
 // Then implement Breadth First Search
-// This algorithm visits each node on each level before proceding to the next level.
+// This algorithm visits each node on each level before proceeding to the next level.
 func bfs(root: TreeNode) {
     var myQueue = Queue<TreeNode>()
     myQueue.enQueue(root)
@@ -89,10 +92,14 @@ func bfs(root: TreeNode) {
         }
     }
 }
-
+print("Breadth First Search")
+bfs(root: root)
+print("- - -")
 /*:
  ## Depth First Search
- There are three ways in which we can implement a depth first search.
+ There are three ways in which we can implement a depth first search.\
+   ![Depth First Search](dfs-2.gif)\
+ [[Image from Ray Wenderlich]](https://www.raywenderlich.com/661-swift-algorithm-club-swift-depth-first-search)
  */
 //: ### Pre-order Depth First Search
 func preOrderdfs(root: TreeNode?) {
@@ -101,7 +108,9 @@ func preOrderdfs(root: TreeNode?) {
     preOrderdfs(root: root.left)
     preOrderdfs(root: root.right)
 }
-
+print("Pre-order Depth First Search")
+preOrderdfs(root: root)
+print("- - -")
 //: ### In-order Depth First Search
 func inOrderdfs(root: TreeNode?) {
     guard let root = root else { return }
@@ -109,7 +118,9 @@ func inOrderdfs(root: TreeNode?) {
     print(root.key)
     inOrderdfs(root: root.right)
 }
-
+print("In-order Depth First Search")
+inOrderdfs(root: root)
+print("- - -")
 //: ### Post-Order Depth First Search
 func postOrderdfs(root: TreeNode?) {
     guard let root = root else { return }
@@ -117,12 +128,14 @@ func postOrderdfs(root: TreeNode?) {
     postOrderdfs(root: root.right)
     print(root.key)
 }
-
+print("Post-order Depth First Search")
+postOrderdfs(root: root)
+print("- - -")
 /*:
  # Binary Search Tree Big O Runtimes
- O(log(n)) for Search / Access / Insert / Remove
- Worst case
- The worst case runtime for each of these operations is O(n). This occurs when you have a degenerate binary search tree that looks like a linked list.
+ **Search / Access / Insert / Remove**\
+ Average for each: O(log(n))\
+ Worst case for each: O(n). This occurs when you have a degenerate binary search tree that looks like a linked list.
  */
 
 //: [Next](@next)
