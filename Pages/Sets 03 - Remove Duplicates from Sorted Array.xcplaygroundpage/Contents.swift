@@ -2,9 +2,7 @@
 import Foundation
 /*:
  # Sets
- ## 349. Intersection of Two Arrays
- [[LeetCode]](https://leetcode.com/problems/intersection-of-two-arrays/description/)
- ### Difficulty: Easy
+ ## Remove Duplicates in Sorted Array
  ### Tags: [Arrays]
  > Problem Description: Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
  Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
