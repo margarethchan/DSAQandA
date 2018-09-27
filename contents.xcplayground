@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
     <pages>
         <page name='Arrays 01 - Diagonal Sum'/>
         <page name='Arrays 02 - Find Repeats'/>
@@ -57,5 +57,6 @@
         <page name='Merge Sort 01 - Info'/>
         <page name='Trees 01 - Info'/>
         <page name='Trees 02 - Trees in Action'/>
+        <page name='Trees and Recursion'/>
     </pages>
 </playground>
